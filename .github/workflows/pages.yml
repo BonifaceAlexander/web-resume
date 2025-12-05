@@ -26,13 +26,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build site
         run: npm run build
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload artifact for deployment
+      - name: Upload artifact for GitHub Pages
+        # This is the GitHub Pages specific uploader (not deprecated)
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist
