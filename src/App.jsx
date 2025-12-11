@@ -91,7 +91,7 @@ export default function BonifaceResume() {
         <nav className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="backdrop-blur-sm bg-white/60 dark:bg-black/40 border border-gray-200 dark:border-gray-800 rounded-full px-4 py-2 flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 rounded-md bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold">BA</div>
+              <img src="/profile.jpg" alt="Boniface Alexander" className="w-10 h-10 rounded-md object-cover" />
               <div className="hidden sm:block">
                 <div className="text-sm font-semibold">Boniface Alexander</div>
                 <div className="text-xs text-gray-600 dark:text-gray-300">AI Prompt Engineer • RAG & Agent Developer</div>
@@ -101,7 +101,7 @@ export default function BonifaceResume() {
             <div className="flex items-center gap-3">
               <a href="#projects" className="text-sm px-3 py-2 rounded-md hover:bg-gray-100/60 dark:hover:bg-white/5">Projects</a>
               <a href="#experience" className="text-sm px-3 py-2 rounded-md hover:bg-gray-100/60 dark:hover:bg-white/5">Experience</a>
-              <a href="#contact" className="text-sm px-3 py-2 rounded-md hover:bg-gray-100/60 dark:hover:bg-white/5">Contact</a>
+              <a href="#get-in-touch" className="text-sm px-3 py-2 rounded-md hover:bg-gray-100/60 dark:hover:bg-white/5">Contact</a>
 
               <button
                 onClick={() => setDark(!dark)}
@@ -160,7 +160,7 @@ export default function BonifaceResume() {
                 </div>
 
                 <div className="flex-shrink-0">
-                  <div className="w-36 h-36 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-2xl">BA</div>
+                  <img src="/profile.jpg" alt="Boniface Alexander" className="w-36 h-36 rounded-xl object-cover" />
                 </div>
               </div>
 
@@ -172,8 +172,8 @@ export default function BonifaceResume() {
                 </p>
 
                 <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Stat title="Years experience" value="7+" />
-                  <Stat title="Live Projects" value="5+" />
+                  <Stat title="Years experience" value="9+" />
+                  <Stat title="GitHub AI Projects" value="7+" />
                 </div>
               </div>
             </div>
@@ -208,6 +208,13 @@ export default function BonifaceResume() {
                   desc="Interactive playbook about prompt engineering and RAG — evolving into RAG and agent chapters."
                   live="https://learn-ai-playbook.vercel.app/"
                 />
+
+                <ProjectCard
+                  title="Vision Prime Agent"
+                  tags={["Python", "Agent"]}
+                  desc="visionprime ∙ main ∙ app.py"
+                  live="https://visionprime-yambasw2uvymkzdyqkeux3.streamlit.app/"
+                />
               </div>
             </section>
 
@@ -217,13 +224,13 @@ export default function BonifaceResume() {
                 <ExperienceItem
                   title="Specialist, Digital Marketing — Verizon Data Services Inc."
                   date="2020 – Present"
-                  bullets={["Built prompt-based apps using Gemini & Vertex AI", "Designed RAG pipelines and LangChain agents", "Improved LLM relevance and reduced hallucinations"]}
+                  bullets={["Built Agentic RAG and AI Agents", "Built prompt-based apps using Gemini & Vertex AI", "Designed RAG pipelines and LangChain agents", "Improved LLM relevance and reduced hallucinations"]}
                 />
 
                 <ExperienceItem
                   title="Automation Test Engineer II — Verizon"
                   date="(previous role)"
-                  bullets={["Led SIT/UAT automation", "Built frameworks and contributed to front-end fixes"]}
+                  bullets={["Led SIT/UAT automation", "Built frameworks and contributed to front-end fixes", "Performed all DB development"]}
                 />
 
                 <ExperienceItem
@@ -277,7 +284,7 @@ export default function BonifaceResume() {
           </aside>
         </section>
 
-        <section className="mt-12">
+        <section id="get-in-touch" className="mt-12">
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.18 }} className="rounded-2xl bg-white dark:bg-[#071022] shadow p-8">
             <h3 className="text-lg font-semibold">Get in touch</h3>
             <p className="mt-2 text-gray-700 dark:text-gray-300">I’m open to collaborations, consulting and full-time roles in AI engineering. Feel free to reach out.</p>
