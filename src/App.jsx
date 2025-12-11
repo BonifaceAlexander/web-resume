@@ -212,7 +212,7 @@ export default function BonifaceResume() {
                 <ProjectCard
                   title="Vision Prime Agent"
                   tags={["Python", "Agent"]}
-                  desc="visionprime ∙ main ∙ app.py"
+                  desc="A specialised AI image studio for Gemini 3 Pro that unlocks professional controls—including custom aspect ratios, fine-tuned guidance, and advanced shot engineering."
                   live="https://visionprime-yambasw2uvymkzdyqkeux3.streamlit.app/"
                 />
               </div>
